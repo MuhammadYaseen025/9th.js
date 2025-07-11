@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malak Yasin | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#blog">Blog</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1 id="typewriter">Malak Yasin</h1>
+    <p>Full-Stack Developer | Portfolio</p>
+  </header>
+
+  <main>
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-box" id="aboutContent">Loading...</div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="images/calculator.png" alt="Calculator Project" class="project-img">
+        <h3>My Calculator</h3>
+        <p>A simple calculator made in JavaScript and HTML/CSS.</p>
+        <a href="https://github.com/yourusername/calculator" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <img src="images/todo.png" alt="To-Do List App" class="project-img">
+        <h3>To-Do List App</h3>
+        <p>Organize tasks with this responsive to-do list built in JavaScript.</p>
+        <a href="https://github.com/yourusername/todo" target="_blank">View Project</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+      </ul>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="blog-post">
+        <h3>Getting Started with JavaScript</h3>
+        <p>A beginner-friendly guide to learning JavaScript basics and building simple projects.</p>
+        <a href="#" target="_blank">Read More</a>
+      </div>
+      <div class="blog-post">
+        <h3>Top 5 Tools Every Developer Should Use</h3>
+        <p>Discover essential tools that boost productivity and help you code like a pro.</p>
+        <a href="#" target="_blank">Read More</a>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="resume-box">
+        <p>Click below to download my resume in PDF format:</p>
+        <a href="yaseen resume.pdf" class="resume-download" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="handleContact(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="contactMsg" style="margin-top: 10px;"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Malak Yasin. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
